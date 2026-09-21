@@ -8,4 +8,17 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    return
+    result = []
+
+    if len(s1) % 2 != 0:
+        result = result + [s1]
+
+    if len(s2) % 2 != 0:
+        result = result + [s2]
+
+    if len(s3) % 2 != 0:
+        result = result + [s3]
+        
+        return result
+    
+print(main("hey", "wassup","cat"))
